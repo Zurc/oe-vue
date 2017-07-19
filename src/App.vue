@@ -21,7 +21,7 @@
       <v-toolbar-side-icon 
         @click.native.stop="sideNav = !sideNav"
         class="hidden-md-and-up"></v-toolbar-side-icon>
-      <v-toolbar-title><router-link to="/" tag="span" style="cursor: pointer">Dinamic Demand Console</router-link to="/" tag="span" style="cursor: pointer"></v-toolbar-title>
+      <v-toolbar-title><router-link to="/" tag="span" style="cursor: pointer">Dinamic Demand Console</router-link></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toobar-items class="hidden-sm-and-down">
         <v-btn 
@@ -86,7 +86,7 @@
     </v-navigation-drawer>
     <v-toolbar fixed class="primary" dark>
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Open Energi</v-toolbar-title>
+      <v-toolbar-title><router-link to="/" tag="span" style="cursor: pointer">Open Energi</router-link></v-toolbar-title>
     </v-toolbar>
     <main>
       <router-view></router-view>
