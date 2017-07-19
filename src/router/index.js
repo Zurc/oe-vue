@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Meetups from '@/components/Meetup/Meetups'
-import CreateMeetup from '@/components/Meetup/CreateMeetup'
+import Entities from '@/components/Entity/Entities'
+import CreateEntity from '@/components/Entity/CreateEntity'
+import Services from '@/components/Services/Services'
+import Plots from '@/components/Plots/Plots'
 import Profile from '@/components/User/Profile'
 import Signup from '@/components/User/Signup'
 import Signin from '@/components/User/Signin'
@@ -17,14 +19,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/meetups',
-      name: 'Meetups',
-      component: Meetups
+      path: '/entities',
+      name: 'Entities',
+      component: Entities
     },
     {
-      path: '/meetup/new',
-      name: 'CreateMeetup',
-      component: CreateMeetup
+      path: '/entity/new',
+      name: 'CreateEntity',
+      component: CreateEntity
+    },
+    {
+      path: '/services',
+      name: 'Services',
+      component: Services
+    },
+    {
+      path: '/plots',
+      name: 'Plots',
+      component: Plots
     },
     {
       path: '/profile',

@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>This is  Meetups component</p>
+    <p>This is  Plots component</p>
   </div>
 </template>
